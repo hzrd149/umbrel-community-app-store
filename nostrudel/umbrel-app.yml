@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: nostrudel
+category: social
+name: noStrudel
+version: "0.36"
+tagline: A sandbox for exploring nostr
+icon: https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/public/icon-512.png
+description: >-
+  noStrudel is a nostr web client that is focused on exploring the nostr network.
+  The focus is on power users or any other users who want to learn the inner workings of nostr.
+releaseNotes: >-
+  Changes here
+developer: hzrd149
+website: https://github.com/hzrd149/nostrudel
+dependencies: []
+repo: https://github.com/hzrd149/nostrudel
+support: https://github.com/hzrd149/nostrudel/issues
+port: 3149
+gallery:
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/profile.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/community.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/photography.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/streaming2.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: https://github.com/getumbrel/umbrel/pull/334
