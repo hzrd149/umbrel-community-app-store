@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-nostrudel
 category: social
 name: noStrudel
-version: "0.36.0"
+version: "0.37.0"
 tagline: A sandbox for exploring nostr
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nostrudel/icon.svg
 description: >-
@@ -12,36 +12,17 @@ description: >-
 releaseNotes: >-
   Changes:
 
-  - Torrents view in tools and under users
+   - Rebuild DMs view to be more readable
 
-  - Add support for Nostr Signing Device ( desktop & chrome only )
+   - Show reactions and zaps on DMs
 
-  - Support default user bookmark list
+   - Add support for threads in DMs
 
-  - Rebuild notifications view
+   - Add support for Amber signer
 
-  - Change "Copy Share Link" to use njump.me
+   - Add support for NIP-46 signer
 
-  - Add Readonly channels view
-
-
-  Smaller changes:
-
-  - Blur videos from strangers
-
-  - Add colors to notifications view
-
-  - Better DM layout
-
-  - Add decrypt all button to DMs
-
-  - Use nevent instead of note1 in urls
-
-  - Add local relay cache option
-
-  - Rebuild thread loading
-
-  - Add option to hide usernames
+   - Support NIP-31 on unknown event kinds
 
 developer: hzrd149
 website: https://github.com/hzrd149/nostrudel
@@ -50,10 +31,10 @@ repo: https://github.com/hzrd149/nostrudel
 support: https://github.com/hzrd149/nostrudel/issues
 port: 3149
 gallery:
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/profile.png
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/community.png
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/photography.png
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.36.0/screenshots/streaming2.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.0/screenshots/profile.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.0/screenshots/community.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.0/screenshots/photography.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.0/screenshots/streaming2.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
