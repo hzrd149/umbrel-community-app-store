@@ -9,7 +9,23 @@ description: >-
   noStrudel is a nostr web client that is focused on exploring the nostr network.
   The focus is on power users or any other users who want to learn the inner workings of nostr.
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  Changes:
+  - Torrents view in tools and under users
+  - Add support for Nostr Signing Device ( desktop & chrome only )
+  - Support default user bookmark list
+  - Rebuild notifications view
+  - Change "Copy Share Link" to use njump.me
+  - Add Readonly channels view
+
+  Smaller changes:
+  - Blur videos from strangers
+  - Add colors to notifications view
+  - Better DM layout
+  - Add decrypt all button to DMs
+  - Use nevent instead of note1 in urls
+  - Add local relay cache option
+  - Rebuild thread loading
+  - Add option to hide usernames
 developer: hzrd149
 website: https://github.com/hzrd149/nostrudel
 dependencies: []
