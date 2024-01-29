@@ -8,7 +8,9 @@ services:
       PROXY_AUTH_ADD: "false"
 
   cors:
-    image: ghcr.io/hzrd149/docker-cors-anywhere:0.4.4
+    image: ghcr.io/hzrd149/docker-cors-anywhere:0.4.5
+    environment:
+      CORSANYWHERE_REQUIRE_HEADERS: "host"
   imageproxy:
     image: ghcr.io/willnorris/imageproxy:v0.11.2
   web:
