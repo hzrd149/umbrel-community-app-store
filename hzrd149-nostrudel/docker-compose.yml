@@ -7,8 +7,18 @@ services:
       APP_PORT: 80
       PROXY_AUTH_ADD: "false"
 
+  cors:
+    image: ghcr.io/hzrd149/docker-cors-anywhere:0.4.4
+  imageproxy:
+    image: ghcr.io/willnorris/imageproxy:v0.11.2
   web:
-    image: ghcr.io/hzrd149/nostrudel:0.37.1
+    image: ghcr.io/hzrd149/nostrudel:sha-9f79c62
     restart: on-failure
     stop_grace_period: 1m
     init: true
+    depends_on:
+      - cors
+      - imageproxy
+    environment:
+      IMAGE_PROXY: imageproxy:8080
+      CORS_PROXY: cors:8080
