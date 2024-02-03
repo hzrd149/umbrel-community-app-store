@@ -19,10 +19,10 @@ repo: https://github.com/hzrd149/nostrudel
 support: https://github.com/hzrd149/nostrudel/issues
 port: 3149
 gallery:
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.1/screenshots/profile.png
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.1/screenshots/community.png
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.1/screenshots/photography.png
-  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.37.1/screenshots/streaming2.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.38.0/screenshots/profile.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.38.0/screenshots/community.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.38.0/screenshots/photography.png
+  - https://raw.githubusercontent.com/hzrd149/nostrudel/v0.38.0/screenshots/streaming2.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""
