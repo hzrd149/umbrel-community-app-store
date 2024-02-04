@@ -13,7 +13,7 @@ website: https://nsecbunker.com/
 dependencies: []
 repo: https://github.com/kind-0/nsecbunkerd
 support: https://github.com/kind-0/nsecbunkerd/issues
-port: 3149
+port: 3530
 gallery:
   - https://nsecbunker.com/screenshot-hero.png
 path: ""
