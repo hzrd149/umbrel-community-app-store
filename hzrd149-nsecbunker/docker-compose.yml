@@ -19,7 +19,7 @@ services:
       - ${APP_DATA_DIR}/data:/data
     environment:
       DATABASE_URL: "file:/data/nsecbunker.db"
-    restart: no
+    restart: "no"
     entrypoint: ""
     command:
       - npx
