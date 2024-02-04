@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-nostrudel
 category: social
 name: noStrudel
-version: "0.38.0"
+version: "0.38.1"
 tagline: A sandbox for exploring nostr
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nostrudel/icon.svg
 description: >-
