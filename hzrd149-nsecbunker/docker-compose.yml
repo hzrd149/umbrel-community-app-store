@@ -4,7 +4,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: hzrd149-nsecbunker_web_1
-      APP_PORT: 80
+      APP_PORT: 3000
       PROXY_AUTH_ADD: "false"
 
   web:
@@ -41,7 +41,5 @@ services:
     command:
       - start
       - -c=/data/nsecbunker.json
-    ports:
-      - "3000:3000"
     depends_on:
       - migrations
