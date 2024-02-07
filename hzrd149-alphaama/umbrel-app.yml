@@ -15,7 +15,7 @@ website: https://alphaama.com/
 dependencies: []
 repo: https://github.com/eskema/alphaama
 support: https://github.com/eskema/alphaama/issues
-port: 3149
+port: 3540
 gallery: []
 path: ""
 defaultUsername: ""
