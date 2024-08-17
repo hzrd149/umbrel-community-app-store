@@ -7,6 +7,9 @@ tagline: A HTTP proxy that can forward connections to HyperDHT nodes
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-hyper-http-proxy/icon.png
 description: >-
   Hyper http proxy is a SOCKS v5 proxy that can forward connections to HyperDHT nodes or holesail live ports
+
+  To use it with FireFox see the instructions in the README here
+  https://github.com/hzrd149/hyper-http-proxy?tab=readme-ov-file#using-the-proxy-in-firefox
 releaseNotes: >-
   Alpha
 
