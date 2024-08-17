@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-hzrd149-hyper-socks5-proxy
 category: networking
 name: hyper-socks5-proxy
-version: "0.1.0"
+version: "0.1.1"
 tagline: A SOCKS5 proxy that can forward connections to HyperDHT nodes
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-hyper-socks5-proxy/icon.png
 description: >-

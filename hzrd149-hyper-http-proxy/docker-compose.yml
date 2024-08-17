@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   server:
-    image: ghcr.io/hzrd149/hyper-http-proxy:0.1.0
+    image: ghcr.io/hzrd149/hyper-http-proxy:0.1.1
     restart: on-failure
     stop_grace_period: 1m
     network_mode: host

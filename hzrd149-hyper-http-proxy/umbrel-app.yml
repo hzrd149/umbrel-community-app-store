@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-hzrd149-hyper-http-proxy
 category: networking
 name: hyper-http-proxy
-version: "0.1.0"
+version: "0.1.1"
 tagline: A HTTP proxy that can forward connections to HyperDHT nodes
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-hyper-http-proxy/icon.png
 description: >-
