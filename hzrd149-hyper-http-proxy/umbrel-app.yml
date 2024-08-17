@@ -18,7 +18,7 @@ website: https://github.com/hzrd149/hyper-http-proxy
 dependencies: []
 repo: https://github.com/hzrd149/hyper-http-proxy
 support: https://github.com/hzrd149/hyper-http-proxy/issues
-port: 3149
+port: 3128
 gallery: []
 path: ""
 defaultUsername: ""

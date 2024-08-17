@@ -18,7 +18,7 @@ website: https://github.com/hzrd149/hyper-socks5-proxy
 dependencies: []
 repo: https://github.com/hzrd149/hyper-socks5-proxy
 support: https://github.com/hzrd149/hyper-socks5-proxy/issues
-port: 3149
+port: 1080
 gallery: []
 path: ""
 defaultUsername: ""
