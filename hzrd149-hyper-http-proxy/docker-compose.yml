@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  server:
+    image: ghcr.io/hzrd149/hyper-http-proxy:0.1.0
+    restart: on-failure
+    stop_grace_period: 1m
+    network_mode: host
+    cap_add:
+      - NET_ADMIN

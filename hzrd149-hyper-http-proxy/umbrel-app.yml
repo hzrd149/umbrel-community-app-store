@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: hzrd149-hzrd149-hyper-http-proxy
+category: networking
+name: hyper-http-proxy
+version: "0.1.0"
+tagline: A HTTP proxy that can forward connections to HyperDHT nodes
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-hyper-http-proxy/icon.png
+description: >-
+  Hyper http proxy is a SOCKS v5 proxy that can forward connections to HyperDHT nodes or holesail live ports
+releaseNotes: >-
+  Alpha
+
+developer: hzrd149
+website: https://github.com/hzrd149/hyper-http-proxy
+dependencies: []
+repo: https://github.com/hzrd149/hyper-http-proxy
+support: https://github.com/hzrd149/hyper-http-proxy/issues
+port: 3149
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: ""
