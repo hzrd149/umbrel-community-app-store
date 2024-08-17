@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: hzrd149-hzrd149-hyper-socks5-proxy
+id: hzrd149-hyper-socks5-proxy
 category: networking
 name: hyper-socks5-proxy
 version: "0.1.1"

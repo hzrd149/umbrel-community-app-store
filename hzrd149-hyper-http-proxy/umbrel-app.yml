@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: hzrd149-hzrd149-hyper-http-proxy
+id: hzrd149-hyper-http-proxy
 category: networking
 name: hyper-http-proxy
 version: "0.1.1"
