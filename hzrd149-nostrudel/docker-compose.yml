@@ -14,7 +14,7 @@ services:
   imageproxy:
     image: ghcr.io/willnorris/imageproxy:v0.11.2
   web:
-    image: ghcr.io/hzrd149/nostrudel:0.39.0
+    image: ghcr.io/hzrd149/nostrudel:0.40.0
     restart: on-failure
     stop_grace_period: 1m
     init: true
