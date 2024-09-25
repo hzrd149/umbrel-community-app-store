@@ -1,0 +1,23 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hzrd149-nsite_nginx_1
+      APP_PORT: 80
+      PROXY_AUTH_ADD: "false"
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 8080:80
+    volumes:
+      - ${APP_DATA_DIR}/nginx/cache:/var/cache/nginx
+      - ${APP_DATA_DIR}/nginx/config/nginx.conf:/etc/nginx/nginx.conf
+      - ${APP_DATA_DIR}/nginx/config/default.conf:/etc/nginx/conf.d/default.conf
+
+  nsite:
+    image: ghcr.io/hzrd149/nsite-ts:0.1.0
+    restart: on-failure
+    environment:
+      LOOKUP_RELAYS: wss://user.kindpag.es,wss://purplepag.es

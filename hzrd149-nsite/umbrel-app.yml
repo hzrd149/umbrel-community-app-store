@@ -1,0 +1,24 @@
+manifestVersion: 1.1
+id: hzrd149-nsite
+category: networking
+name: nsite
+version: "0.1.0"
+tagline: local nsite host
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nsite/icon.jpg
+description: >-
+  Explore nsites
+releaseNotes: >-
+  Alpha
+
+developer: hzrd149
+website: https://github.com/hzrd149/nsite-ts
+dependencies: []
+repo: https://github.com/hzrd149/nsite-ts
+support: https://github.com/hzrd149/nsite-ts/issues
+port: 34128
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: ""
