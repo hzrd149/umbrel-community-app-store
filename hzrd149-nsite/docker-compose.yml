@@ -8,10 +8,12 @@ services:
       PROXY_AUTH_ADD: "false"
 
   nsite:
-    image: ghcr.io/hzrd149/nsite-ts:0.2.0
+    image: ghcr.io/hzrd149/nsite-ts:0.4.0
     restart: on-failure
     environment:
       LOOKUP_RELAYS: wss://user.kindpag.es,wss://purplepag.es
       SUBSCRIPTION_RELAYS: wss://nostrue.com/,wss://nos.lol/,wss://relay.damus.io/,wss://purplerelay.com/
+      TOR_PROXY: "$TOR_PROXY_IP:$TOR_PROXY_PORT"
+      ONION_HOST: ${APP_HIDDEN_SERVICE}
     volumes:
-      - ${APP_DATA_DIR}:/var/cache/nginx
+      - ${APP_DATA_DIR}/cache:/var/cache/nginx

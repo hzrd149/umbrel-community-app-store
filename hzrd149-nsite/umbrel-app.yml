@@ -2,11 +2,11 @@ manifestVersion: 1.1
 id: hzrd149-nsite
 category: networking
 name: nsite
-version: "0.2.0"
+version: "0.4.0"
 tagline: local nsite host
-icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nsite/icon.jpg
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nsite/icon.png
 description: >-
-  Explore nsites
+  Explore static websites on nostr
 releaseNotes: >-
   Alpha
 
