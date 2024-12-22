@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: hzrd149-narr
+category: social
+name: narr
+version: "0.1.0"
+tagline: self-hosted Nostr and RSS reader
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-narr/icon.svg
+description: >-
+  narr (not another rss reader) is a web-based RSS and Nostr long-form feed aggregator which can be used both as a desktop application and a personal self-hosted server.
+releaseNotes: |
+  Initial release
+
+developer: fiatjaf
+website: https://github.com/fiatjaf/narr
+dependencies: []
+repo: https://github.com/fiatjaf/narr
+support: https://github.com/fiatjaf/narr/issues
+port: 3149
+gallery:
+  - https://raw.githubusercontent.com/fiatjaf/narr/refs/heads/master/etc/promo.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: ""
