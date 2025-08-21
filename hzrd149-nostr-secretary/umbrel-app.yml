@@ -1,0 +1,24 @@
+manifestVersion: 1
+id: hzrd149-nostr-secretary
+category: social
+name: Nostr Secretary
+version: "0.1.0"
+tagline: Stupid simple nostr notifications
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nostr-secretary/icon.svg
+description: >-
+  Stupid simple nostr notifications.
+releaseNotes: |
+  Initial release
+
+developer: hzrd149
+website: https://github.com/hzrd149/nostr-secretary
+dependencies: []
+repo: https://github.com/hzrd149/nostr-secretary
+support: https://github.com/hzrd149/nostr-secretary/issues
+port: 9482
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: ""

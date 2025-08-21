@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hzrd149-nostr-secretary_server_1
+      APP_PORT: 8080
+  server:
+    image: ghcr.io/hzrd149/nostr-secretary:master
+    restart: on-failure
+    stop_grace_period: 1m
+    init: true
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/app/config
