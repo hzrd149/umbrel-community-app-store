@@ -11,4 +11,4 @@ services:
     stop_grace_period: 1m
     init: true
     volumes:
-      - ${APP_DATA_DIR}/data/config:/app/config
+      - ${APP_DATA_DIR}:/app/data
