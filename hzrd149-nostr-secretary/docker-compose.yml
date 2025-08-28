@@ -6,7 +6,7 @@ services:
       APP_HOST: hzrd149-nostr-secretary_server_1
       APP_PORT: 8080
   server:
-    image: ghcr.io/hzrd149/nostr-secretary:0.2
+    image: ghcr.io/hzrd149/nostr-secretary:0.2.1
     restart: on-failure
     stop_grace_period: 1m
     init: true
