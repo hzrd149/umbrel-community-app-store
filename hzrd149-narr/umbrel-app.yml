@@ -15,7 +15,7 @@ website: https://github.com/fiatjaf/narr
 dependencies: []
 repo: https://github.com/fiatjaf/narr
 support: https://github.com/fiatjaf/narr/issues
-port: 3149
+port: 3395
 gallery:
   - https://raw.githubusercontent.com/fiatjaf/narr/refs/heads/master/etc/promo.png
 path: ""

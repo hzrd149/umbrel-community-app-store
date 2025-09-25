@@ -15,7 +15,7 @@ website: https://github.com/hzrd149/umbrel-blob-box
 dependencies: []
 repo: https://github.com/hzrd149/umbrel-blob-box
 support: https://github.com/hzrd149/umbrel-blob-box/issues
-port: 3273
+port: 3937
 gallery: []
 submitter: hzrd149
 submission: ""
