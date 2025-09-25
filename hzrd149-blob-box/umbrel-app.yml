@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-blob-box
 category: social
 name: Blob Box
-version: "0.2.0"
+version: "0.2.1"
 tagline: A simple way to share blobs from your Umbrel
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-blob-box/icon.svg
 description: >-
