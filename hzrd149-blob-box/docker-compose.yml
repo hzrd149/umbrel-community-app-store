@@ -5,7 +5,7 @@ services:
     environment:
       APP_HOST: hzrd149-blob-box_blossom_1
       APP_PORT: 3000
-      PROXY_AUTH_ADD: "false"
+      PROXY_AUTH_WHITELIST: "/admin/*"
 
   blossom:
     image: ghcr.io/hzrd149/umbrel-blob-box:0.3.0
@@ -17,4 +17,4 @@ services:
     environment:
       DATA_DIR: /data
       APP_HIDDEN_SERVICE: ${APP_HIDDEN_SERVICE}
-      APP_PASSWORD: ${APP_PASSWORD}
+      APP_PASSWORD: "" # Disable app password to use Umbrel auth proxy
