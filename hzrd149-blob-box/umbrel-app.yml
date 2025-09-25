@@ -2,13 +2,16 @@ manifestVersion: 1
 id: hzrd149-blob-box
 category: social
 name: Blob Box
-version: "0.2.1"
+version: "0.3.0"
 tagline: A simple way to share blobs from your Umbrel
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-blob-box/icon.svg
 description: >-
   Share a folder of blobs on your Umbrel over tor.
 releaseNotes: |
-  Added copy link button to files.
+  - Added admin dashboard
+  - Support BUD-02 for blossom uploads and deletes
+  - Added pubkey whitelist
+  - Added option for anonymous uploads
 
 developer: hzrd149
 website: https://github.com/hzrd149/umbrel-blob-box
