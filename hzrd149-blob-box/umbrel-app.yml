@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: hzrd149-blob-box
+category: social
+name: Blob Box
+version: "0.1.0"
+tagline: A simple way to share blobs from your Umbrel
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-blob-box/icon.svg
+description: >-
+  Share a folder of blobs on your Umbrel with a blossom URL.
+releaseNotes: |
+  Initial release
+
+developer: hzrd149
+website: https://github.com/hzrd149/umbrel-blob-box
+dependencies: []
+repo: https://github.com/hzrd149/umbrel-blob-box
+support: https://github.com/hzrd149/umbrel-blob-box/issues
+port: 3273
+gallery: []
+submitter: hzrd149
+submission: ""
