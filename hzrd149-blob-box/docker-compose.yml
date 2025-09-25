@@ -6,7 +6,7 @@ services:
       APP_HOST: hzrd149-blob-box_blossom_1
       APP_PORT: 3000
       PROXY_AUTH_WHITELIST: "*"
-      PROXY_AUTH_BLACKLIST: "/admin/*"
+      PROXY_AUTH_BLACKLIST: "/admin,/admin/*"
 
   blossom:
     image: ghcr.io/hzrd149/umbrel-blob-box:0.3.0
