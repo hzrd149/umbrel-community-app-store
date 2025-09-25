@@ -3,4 +3,7 @@ set -euo pipefail
 
 APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
 
-[ ! -d "${APP_DATA_DIR}" ] && mkdir -p "${APP_DATA_DIR}" && chown 1000:1000 "${APP_DATA_DIR}"
+[ ! -d "${APP_DATA_DIR}" ] && mkdir -p "${APP_DATA_DIR}"
+
+# Always change the user for app data dir
+chown 1000:1000 "${APP_DATA_DIR}"
