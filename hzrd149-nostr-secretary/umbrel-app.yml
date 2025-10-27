@@ -2,18 +2,14 @@ manifestVersion: 1
 id: hzrd149-nostr-secretary
 category: social
 name: Nostr Secretary
-version: "0.2.1"
+version: "0.2.2"
 tagline: Stupid simple nostr notifications
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nostr-secretary/icon.svg
 description: >-
   Stupid simple nostr notifications.
 releaseNotes: |
-  ## Changes
-   - Added NIP-29 groups notifications.
-   - Added whitelists and blacklists for all notification types.
-
   ## Fixes
-  - Fixed not reconnecting to relays after a connection error.
+  - Bump dependencies.
 
 developer: hzrd149
 website: https://github.com/hzrd149/nostr-secretary
