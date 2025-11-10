@@ -39,8 +39,6 @@ releaseNotes: |
   - Profile validation with NIP-05 and Lightning addresses
   - Reciprocity checking for mutual follow relationships
   - Persistent SQLite caching with configurable TTL
-  - MCP Server interface for integration
-  - Resource-efficient design (256MB RAM, 256MB storage minimum)
 developer: ContextVM
 website: https://relatr.xyz
 repo: https://github.com/ContextVM/relatr
