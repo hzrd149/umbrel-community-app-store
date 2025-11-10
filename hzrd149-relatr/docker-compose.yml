@@ -1,0 +1,16 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hzrd149-relatr_server_1
+      APP_PORT: 3000
+
+  server:
+    image: ghcr.io/hzrd149/relatr:master-821974a
+    restart: on-failure
+    stop_grace_period: 1m
+    init: true
+    volumes:
+      - ${APP_DATA_DIR}:/usr/src/app/data
+    environment:
+      SERVER_SECRET_KEY: ${APP_SEED}
+

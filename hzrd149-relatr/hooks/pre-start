@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
+
+# Create data directory if it doesn't exist and set ownership to UID 1000
+[ ! -d "${APP_DATA_DIR}" ] && mkdir -p "${APP_DATA_DIR}" && chown 1000:1000 "${APP_DATA_DIR}"
+
+# Ensure ownership is correct even if directory already exists
+chown -R 1000:1000 "${APP_DATA_DIR}" || true
+
