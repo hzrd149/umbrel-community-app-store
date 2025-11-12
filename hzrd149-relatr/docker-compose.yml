@@ -5,7 +5,7 @@ services:
       APP_PORT: 3000
 
   server:
-    image: ghcr.io/hzrd149/relatr:master-821974a
+    image: ghcr.io/contextvm/relatr:v0.0.8@sha256:ab40cd47a95a5f37912ab2068fa65ecd2735f22fc02929fcc06ef0d14c52ee54
     restart: on-failure
     stop_grace_period: 1m
     init: true

@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-relatr
 category: social
 name: Relatr
-version: "0.0.4"
+version: "0.0.8"
 tagline: Decentralized web of trust metric service for Nostr
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-relatr/icon.png
 description: >-
