@@ -2,43 +2,50 @@ manifestVersion: 1
 id: hzrd149-relatr
 category: social
 name: Relatr
-version: "0.0.8"
+version: "0.1.5"
 tagline: Decentralized web of trust metric service for Nostr
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-relatr/icon.png
 description: >-
   Relatr is a decentralized web of trust metric service for Nostr that computes personalized trust scores by combining social graph distances with profile validation metrics.
-
-
   Relatr measures relative trust between Nostr public keys by analyzing social graph proximity and validating profile characteristics. It uses a weighted scoring system to produce a comprehensive trust metric that can be personalized from any source pubkey's perspective.
 
-
-  **Features:**
-
-
-  - **Web-Based Configuration UI**: Manage environment variables through a browser interface
-
-  - **Social Graph Analysis**: Calculates trust distances using nostr-social-graph
-
-  - **Profile Validation**: Validates NIP-05, Lightning addresses, and event publications
-
-  - **Reciprocity Checking**: Verifies mutual follow relationships
-
-  - **Configurable Scoring**: Flexible weighting schemes for different trust factors
-
-  - **Persistent Caching**: SQLite-based caching for performance optimization
-
-  - **MCP Server Interface**: Model Context Protocol API for integration
-
+  Features:
+  - Web-Based Configuration UI: Manage environment variables through a browser interface
+  - Social Graph Analysis: Calculates trust distances using nostr-social-graph
+  - Profile Validation: Validates NIP-05, Lightning addresses, and event publications
+  - Reciprocity Checking: Verifies mutual follow relationships
+  - Configurable Scoring: Flexible weighting schemes for different trust factors
+  - Persistent Caching: SQLite-based caching for performance optimization
+  - MCP Server Interface: Model Context Protocol API for integration
 
   The service is designed to be resource-efficient with minimal hardware requirements, requiring only 256MB RAM and 256MB storage for basic operation.
 releaseNotes: |
-  Initial release of Relatr for Umbrel.
+  Performance Improvements:
+  - Streaming data processing for pubkey metadata prevents memory accumulation
+  - Scales efficiently to larger network sizes without O(n) memory growth
+  - Events are processed immediately and stored in database
+  - Batch validation and distance calculations leverage DuckDB capabilities
+  - Caching of weights and distances reduces redundant computations
+  - Increased batch size for validation sync improves throughput
 
-  - Web-based configuration UI powered by process-pastry
-  - Social graph analysis using nostr-social-graph
-  - Profile validation with NIP-05 and Lightning addresses
-  - Reciprocity checking for mutual follow relationships
-  - Persistent SQLite caching with configurable TTL
+  Database Architecture:
+  - Migrated from SQLite to DuckDB for better performance
+  - Replaced monolithic storage with specialized repositories
+  - Multi-connection management for transaction isolation
+  - Improved connection lifecycle with graceful shutdown
+  - Better error handling with specific database error types
+
+  Search and Graph Features:
+  - Improved search algorithm for more accurate results
+  - Added mutual follow detection for relationship analysis
+  - Enhanced social graph analysis capabilities
+  - Better metrics validation with TTL support
+
+  Code Quality:
+  - Added ESLint with TypeScript support for better code quality
+  - Improved error handling throughout the application
+  - Better initialization and logging for easier troubleshooting
+  - Cleaner service architecture with separation of concerns
 developer: ContextVM
 website: https://relatr.xyz
 repo: https://github.com/ContextVM/relatr
