@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-nostrudel
 category: social
 name: noStrudel
-version: "0.46.1"
+version: "1.0.2"
 tagline: A sandbox for exploring nostr
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nostrudel/icon.svg
 description: >-
@@ -10,15 +10,35 @@ description: >-
 
   The focus is on power users or any other users who want to learn the inner workings of nostr.
 releaseNotes: |
-  ### Changes
+  This release brings significant improvements to how noStrudel connects to the nostr network, along with a major UI overhaul and cleanup.
 
-  - Add option for custom share service (njump.me)
-  - Add article reader component using native web TTS API
-  - Show favorite relays in discovery view
-  - Add relay feed to discovery view
-  - Redesign user profile navigation
-  - Fix open graph link images not being blured
-  - Fix ncrypsec accounts not prompting for decryption password
+  ### New Features
+
+  - **Outbox Model Support**: Home feed now subscribes to users' outbox relays for better content discovery and reliability
+  - **Highlights in Timeline**: View and interact with highlights directly in your timeline
+  - **Rebuilt Notifications**: Completely redesigned notification system with separate views for threads, mentions, and zaps
+  - **NIP-29 Group Chats**: Full support for group chat functionality
+  - **Blossom Servers Page**: New dedicated page for managing Blossom servers
+  - **Enhanced Username Search**: Added support for Primal, Vertex, and Relatr username search providers
+  - **Relay Favorites**: Easily favorite relays directly from relay feeds
+  - **Feeds View**: "Discovery" has been renamed to "Feeds" with new contact outbox feeds
+
+  ### Bug Fixes
+
+  - Fixed events getting published to 0 relays
+  - Fixed user lookup calling all providers unnecessarily
+  - Fixed Spotify embeds being mistaken for Wavlake
+  - Show muted replies in threads for better context
+  - Disabled reactions on NIP-17 DMs for privacy
+  - Use random default pubkeys when not signed in for better privacy
+
+  ### Cleanup & Performance
+
+  - Removed unused features: relay chat, DVM tools, note corrections, zap goals browser, badges browser, stemstr support, flare.pub videos, WebRTC relay, and map tool
+  - Streamlined launchpad layout for better usability
+  - Removed experimental features that weren't working properly
+
+  This is a major milestone release focused on reliability, performance, and a cleaner user experience!
 
 developer: hzrd149
 website: https://github.com/hzrd149/nostrudel
