@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+APP_DATA_DIR="$(readlink -f $(dirname "${BASH_SOURCE[0]}")/..)/data"
+
+# Create cache directory if it doesn't exist
+[ ! -d "${APP_DATA_DIR}/cache" ] && mkdir -p "${APP_DATA_DIR}/cache"
+
+# Set ownership of cache directory to UID 1000 (common for Node.js apps)
+# The volume mount is ${APP_DATA_DIR}/cache:/cache in docker-compose.yml
+chown -R 1000:1000 "${APP_DATA_DIR}/cache" || true
+

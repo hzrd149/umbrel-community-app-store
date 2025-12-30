@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Create badger directory if it doesn't exist
+mkdir -p "${APP_DATA_DIR}/badger"
+
+# Change ownership of data directory to match the app's user (UID 1001)
+# The wotrlay container runs as non-root user with UID 1001
+chown -R 1001:1001 "${APP_DATA_DIR}/badger" || true

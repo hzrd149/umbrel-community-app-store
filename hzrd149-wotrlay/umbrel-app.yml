@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: hzrd149-wotrlay
+category: social
+name: wotrlay
+version: "1.2.3"
+tagline: Trust-based Nostr relay with Relatr integration
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-wotrlay/icon.svg
+description: >-
+  wotrlay is a Nostr relay that uses trust scores from Relatr to filter and rank content.
+  It provides a trust-based relay experience, allowing users to see content from trusted sources
+  while filtering out low-trust content. The relay integrates with ContextVM's Relatr service
+  to calculate trust scores and make intelligent routing decisions.
+releaseNotes: |
+  Initial release of wotrlay for Umbrel.
+
+  Features:
+  - Trust-based content filtering using Relatr trust scores
+  - Configurable trust thresholds (MID_THRESHOLD, HIGH_THRESHOLD)
+  - Badger database for persistent event storage
+  - NIP-11 relay information support
+  - WebSocket and HTTP endpoints
+  - Configurable rank queue limits and URL policies
+
+developer: contextvm
+website: https://github.com/contextvm/wotrlay
+dependencies: []
+repo: https://github.com/contextvm/wotrlay
+support: https://github.com/contextvm/wotrlay/issues
+port: 3334
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: ""

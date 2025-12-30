@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hzrd149-wotrlay_wotrlay_1
+      APP_PORT: 3334
+      PROXY_AUTH_ADD: "false"
+
+  wotrlay:
+    image: ghcr.io/contextvm/wotrlay:latest@sha256:f568c3abccf10dce43bb01c3a89258acc9ddd94f20b58aaeeb33d621187eec11
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/badger:/app/badger
+    environment:
+      MID_THRESHOLD: "0.5"
+      RELATR_RELAY: "wss://relay.contextvm.org"
+      # TODO: This should be customizable by the user
+      RELATR_PUBKEY: "750682303c9f0ddad75941b49edc9d46e3ed306b9ee3335338a21a3e404c5fa3"
