@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-relatr
 category: social
 name: Relatr
-version: "0.1.5"
+version: "0.1.10"
 tagline: Decentralized web of trust metric service for Nostr
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-relatr/icon.png
 description: >-
@@ -20,32 +20,7 @@ description: >-
 
   The service is designed to be resource-efficient with minimal hardware requirements, requiring only 256MB RAM and 256MB storage for basic operation.
 releaseNotes: |
-  Performance Improvements:
-  - Streaming data processing for pubkey metadata prevents memory accumulation
-  - Scales efficiently to larger network sizes without O(n) memory growth
-  - Events are processed immediately and stored in database
-  - Batch validation and distance calculations leverage DuckDB capabilities
-  - Caching of weights and distances reduces redundant computations
-  - Increased batch size for validation sync improves throughput
-
-  Database Architecture:
-  - Migrated from SQLite to DuckDB for better performance
-  - Replaced monolithic storage with specialized repositories
-  - Multi-connection management for transaction isolation
-  - Improved connection lifecycle with graceful shutdown
-  - Better error handling with specific database error types
-
-  Search and Graph Features:
-  - Improved search algorithm for more accurate results
-  - Added mutual follow detection for relationship analysis
-  - Enhanced social graph analysis capabilities
-  - Better metrics validation with TTL support
-
-  Code Quality:
-  - Added ESLint with TypeScript support for better code quality
-  - Improved error handling throughout the application
-  - Better initialization and logging for easier troubleshooting
-  - Cleaner service architecture with separation of concerns
+  Bump patch version to fix a bug with the database connection.
 developer: ContextVM
 website: https://relatr.xyz
 repo: https://github.com/ContextVM/relatr
