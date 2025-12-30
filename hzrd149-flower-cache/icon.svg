@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 256 256" xml:space="preserve">
+  <defs>
+    <linearGradient id="flowerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C44569;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cacheGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E86AB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="128" cy="128" r="120" fill="url(#flowerGrad)"/>
+
+  <!-- Flower petals -->
+  <circle cx="128" cy="100" r="25" fill="#FFE66D" opacity="0.9"/>
+  <circle cx="100" cy="128" r="25" fill="#FFE66D" opacity="0.9"/>
+  <circle cx="156" cy="128" r="25" fill="#FFE66D" opacity="0.9"/>
+  <circle cx="128" cy="156" r="25" fill="#FFE66D" opacity="0.9"/>
+  <circle cx="114" cy="100" r="25" fill="#FFE66D" opacity="0.9"/>
+  <circle cx="142" cy="100" r="25" fill="#FFE66D" opacity="0.9"/>
+  <circle cx="114" cy="156" r="25" fill="#FFE66D" opacity="0.9"/>
+  <circle cx="142" cy="156" r="25" fill="#FFE66D" opacity="0.9"/>
+
+  <!-- Flower center -->
+  <circle cx="128" cy="128" r="20" fill="#FF6B9D"/>
+
+  <!-- Cache symbol (circular arrows) -->
+  <path d="M 128 60 A 20 20 0 1 1 148 60" fill="none" stroke="url(#cacheGrad)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 128 196 A 20 20 0 1 1 108 196" fill="none" stroke="url(#cacheGrad)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 60 128 A 20 20 0 1 1 60 108" fill="none" stroke="url(#cacheGrad)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 196 128 A 20 20 0 1 1 196 148" fill="none" stroke="url(#cacheGrad)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Arrow indicators -->
+  <polygon points="148,55 155,60 148,65" fill="url(#cacheGrad)"/>
+  <polygon points="108,201 101,196 108,191" fill="url(#cacheGrad)"/>
+  <polygon points="55,108 60,101 65,108" fill="url(#cacheGrad)"/>
+  <polygon points="201,148 196,155 191,148" fill="url(#cacheGrad)"/>
+</svg>
+

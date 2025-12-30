@@ -1,0 +1,48 @@
+manifestVersion: 1
+id: hzrd149-flower-cache
+category: networking
+name: Flower Cache
+version: "0.2.0"
+tagline: High-performance Blossom proxy server with local caching
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-flower-cache/icon.svg
+description: >-
+  A high-performance Blossom proxy server that caches blobs locally and proxies requests to upstream Blossom servers. Implements BUD-01 and BUD-10 URL schemas for decentralized blob storage and retrieval.
+
+  Features:
+  - Streaming Responses: Streams blob data to clients immediately as it arrives from upstream servers, reducing latency for large files
+  - Incremental Hash Calculation: Calculates SHA-256 hash incrementally while streaming, validating blob integrity without buffering
+  - Streaming Cache Writes: Writes blobs to cache incrementally as data arrives, minimizing memory usage
+  - Request Deduplication: Multiple concurrent requests for the same blob share a single upstream fetch, eliminating redundant network traffic
+  - Local Caching: Automatically caches downloaded blobs to disk for fast subsequent access
+  - LRU Cache Pruning: Automatically removes least-recently-used blobs when cache size limit is exceeded
+  - SHA-256 Validation: Validates blob integrity before caching to ensure data integrity
+  - ETag Support: Implements HTTP ETags for efficient client-side caching (304 Not Modified responses)
+  - Range Requests: Supports HTTP range requests for partial content delivery (video streaming, resume downloads)
+  - Multi-Server Proxying: Tries multiple upstream servers in order until blob is found
+  - CORS Support: Full CORS headers for cross-origin requests
+  - Author Server Resolution: BUD-03 author server list resolution for automatic server discovery
+  - High Performance: Built with Bun for maximum speed
+releaseNotes: |
+  Initial release of Flower Cache for Umbrel.
+
+  Features:
+  - High-performance Blossom proxy with local caching
+  - Streaming blob retrieval with incremental hash validation
+  - Request deduplication for efficient network usage
+  - LRU cache management with configurable size limits
+  - Full BUD-01 and BUD-10 compliance
+  - HTTP range request support for video streaming
+  - CORS support for web applications
+developer: hzrd149
+website: https://github.com/hzrd149/flower-cache
+dependencies: []
+repo: https://github.com/hzrd149/flower-cache
+support: https://github.com/hzrd149/flower-cache/issues
+port: 24242
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: ""
+

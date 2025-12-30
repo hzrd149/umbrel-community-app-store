@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hzrd149-flower-cache_flower-cache_1
+      APP_PORT: 24242
+      PROXY_AUTH_ADD: "false"
+
+  flower-cache:
+    image: ghcr.io/hzrd149/flower-cache:0.2.0@sha256:633dc918bf2ba114ca053b7ca42aa6a5f4ab3201676b7eb6f496e14c6db47c7d
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/cache:/cache
+    environment:
+      PORT: "24242"
+      # NOTE: this should be customizable for the user
+      MAX_CACHE_SIZE: "50GB"
+      LOOKUP_RELAYS: "wss://user.kindpag.es,wss://purplepag.es,wss://index.hzrd149.com,wss://indexer.coracle.social"
+      FALLBACK_SERVERS: "https://blossom.primal.net,https://cdn.satellite.earth"

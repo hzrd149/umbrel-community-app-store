@@ -2,19 +2,20 @@ manifestVersion: 1.1
 id: hzrd149-nsite
 category: networking
 name: nsite
-version: "0.4.0"
-tagline: local nsite host
+version: "1.3.0"
+tagline: local nsite gateway
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-nsite/icon.png
 description: >-
   Explore static websites on nostr
 releaseNotes: >-
-  Alpha
+  - Bump to latest version of nsite-gateway
+  - Add indexer.coracle.social to lookup relays
 
 developer: hzrd149
-website: https://github.com/hzrd149/nsite-ts
+website: https://github.com/hzrd149/nsite-gateway
 dependencies: []
-repo: https://github.com/hzrd149/nsite-ts
-support: https://github.com/hzrd149/nsite-ts/issues
+repo: https://github.com/hzrd149/nsite-gateway
+support: https://github.com/hzrd149/nsite-gateway/issues
 port: 34128
 gallery: []
 path: ""
