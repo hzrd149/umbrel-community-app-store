@@ -8,7 +8,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   flower-cache:
-    image: ghcr.io/hzrd149/flower-cache:0.2.0@sha256:633dc918bf2ba114ca053b7ca42aa6a5f4ab3201676b7eb6f496e14c6db47c7d
+    image: ghcr.io/hzrd149/flower-cache:0.2.1
     restart: on-failure
     stop_grace_period: 1m
     volumes:

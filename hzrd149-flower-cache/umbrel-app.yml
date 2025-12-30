@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-flower-cache
 category: networking
 name: Flower Cache
-version: "0.2.0"
+version: "0.2.1"
 tagline: High-performance Blossom proxy server with local caching
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-flower-cache/icon.svg
 description: >-
