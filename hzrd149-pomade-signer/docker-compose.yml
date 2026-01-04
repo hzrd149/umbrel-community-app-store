@@ -1,0 +1,16 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: hzrd149-pomade-signer_signer_1
+      APP_PORT: 3000
+
+  signer:
+    image: ghcr.io/coracle-social/pomade-signer@sha256:e986bf025ab3169beb3bdae4b0a61c1e1786b43c2bdab5ef25a9975c041db024
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      POMADE_SECRET: ${APP_SEED}
+      POMADE_RELAYS: wss://bucket.coracle.social
+      POMADE_DB_PATH: /data/pomade-signer.db

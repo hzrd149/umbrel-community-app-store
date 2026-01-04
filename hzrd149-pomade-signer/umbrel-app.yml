@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: hzrd149-pomade-signer
+category: social
+name: Pomade Signer
+version: "1.0.0"
+tagline: Standalone signer service for pomade multisig sessions
+icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-pomade-signer/icon.png
+description: >-
+  Pomade Signer is a standalone signer service for pomade that manages multisig sessions, handles signing requests, and coordinates recovery flows.
+
+  Features:
+  - Multisig Session Management: Handles complex multisig coordination
+  - Signing Request Processing: Manages and processes signing requests
+  - Recovery Flow Coordination: Coordinates recovery processes for multisig setups
+  - Persistent Storage: SQLite database for session and state management
+
+  The service runs as a headless background service, securely managing your Nostr private key and coordinating multisig operations.
+releaseNotes: |
+  Initial release of Pomade Signer service.
+developer: Coracle Social
+website: https://github.com/coracle-social/pomade
+repo: https://github.com/coracle-social/pomade
+support: https://github.com/coracle-social/pomade/issues
+port: 3397
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: hzrd149
+submission: ""
