@@ -5,7 +5,7 @@ services:
       APP_PORT: 3000
 
   signer:
-    image: ghcr.io/coracle-social/pomade-signer@sha256:e986bf025ab3169beb3bdae4b0a61c1e1786b43c2bdab5ef25a9975c041db024
+    image: ghcr.io/coracle-social/pomade-signer@sha256:e722ba054f25159726cff81b310e05a939833da5ae4ebfde54f825919ed342b3
     restart: on-failure
     stop_grace_period: 1m
     volumes:

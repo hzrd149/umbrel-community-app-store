@@ -2,7 +2,7 @@ manifestVersion: 1
 id: hzrd149-pomade-signer
 category: social
 name: Pomade Signer
-version: "1.0.0"
+version: "0.0.12"
 tagline: Standalone signer service for pomade multisig sessions
 icon: https://raw.githubusercontent.com/hzrd149/umbrel-community-app-store/master/hzrd149-pomade-signer/icon.png
 description: >-
