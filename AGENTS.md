@@ -23,6 +23,18 @@ This is a personal Umbrel community app store with the following structure:
         └── post-stop
 ```
 
+## Git Checkpoints and Rollback Safety
+
+Agents MUST create a git commit after completing any feature, app addition, app update, app removal, or meaningful configuration change. This provides a rollback point when a change breaks installation, startup, or runtime behavior.
+
+Before committing:
+- Verify the change as much as practical for the task
+- Inspect `git status` and `git diff`
+- Stage only files related to the completed work
+- Do not stage, revert, or modify unrelated user changes already present in the worktree
+
+Commit messages should be concise and specific, such as `Add <app-name> v<version>` or `Update <app-name> to v<version>`.
+
 ## App ID Naming Convention
 
 App IDs in this community app store MUST follow this pattern:
